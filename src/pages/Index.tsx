@@ -8,29 +8,29 @@ import heroImage from "@/assets/hero-construction.jpg";
 
 const Index = () => {
   const features = [
-    "Attention to detail",
-    "Unlimited possibilities", 
-    "Personal customer contact",
-    "Hands-on management",
-    "Individual solutions",
-    "Authentic relationships"
+    "Liebe zum Detail",
+    "Unbegrenzte Möglichkeiten", 
+    "Persönlicher Kundenkontakt",
+    "Geschäftsführung vor Ort",
+    "Individuelle Lösungen",
+    "Authentische Beziehungen"
   ];
 
   const services = [
     {
       icon: Building2,
-      title: "Construction & Renovation",
-      description: "New construction and complete renovation projects"
+      title: "Bau & Renovierung",
+      description: "Neubau und komplette Renovierungsprojekte"
     },
     {
       icon: Users,
-      title: "Personal Service", 
-      description: "Business owners working directly with you on-site"
+      title: "Persönlicher Service", 
+      description: "Geschäftsinhaber arbeiten direkt mit Ihnen vor Ort"
     },
     {
       icon: Award,
-      title: "Quality Craftsmanship",
-      description: "Unique quality and attention to detail in every project"
+      title: "Handwerkliche Qualität",
+      description: "Einzigartige Qualität und Liebe zum Detail in jedem Projekt"
     }
   ];
 
@@ -43,7 +43,7 @@ const Index = () => {
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage}
-            alt="Professional construction work"
+            alt="Professionelle Bauarbeiten"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/70"></div>
@@ -55,27 +55,27 @@ const Index = () => {
               Allbauprojekt
             </h1>
             <p className="text-xl md:text-3xl mb-8 opacity-90">
-              Open to everything – unlimited possibilities
+              Offen für alles – unbegrenzte Möglichkeiten
             </p>
             <p className="text-lg md:text-xl mb-12 opacity-80 max-w-3xl mx-auto">
-              We stand for attention to detail, unlimited possibilities, and personal customer contact. 
-              Construction work as individual and diverse as we humans are.
+              Wir stehen für Liebe zum Detail, unbegrenzte Möglichkeiten und persönlichen Kundenkontakt. 
+              Bauarbeiten so individuell und vielfältig wie wir Menschen sind.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <Badge variant="secondary" className="text-lg py-2 px-6">affordable</Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-6">uncomplicated</Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-6">reliable</Badge>
+              <Badge variant="secondary" className="text-lg py-2 px-6">erschwinglich</Badge>
+              <Badge variant="secondary" className="text-lg py-2 px-6">unkompliziert</Badge>
+              <Badge variant="secondary" className="text-lg py-2 px-6">zuverlässig</Badge>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
                 <NavLink to="/services">
-                  Explore Our Services <ArrowRight className="ml-2 h-5 w-5" />
+                  Unsere Leistungen entdecken <ArrowRight className="ml-2 h-5 w-5" />
                 </NavLink>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4">
-                <NavLink to="/contact">Get in Touch</NavLink>
+                <NavLink to="/contact">Kontakt aufnehmen</NavLink>
               </Button>
             </div>
           </div>
@@ -87,11 +87,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              What Sets Us Apart
+              Was uns auszeichnet
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              A young company with the goal of not only accepting assignments but also living out 
-              relationships and authenticity with our customers.
+              Ein junges Unternehmen mit dem Ziel, nicht nur Aufträge anzunehmen, sondern auch 
+              Beziehungen und Authentizität mit unseren Kunden zu leben.
             </p>
           </div>
 
@@ -106,11 +106,11 @@ const Index = () => {
                 ))}
               </div>
               <p className="text-muted-foreground text-lg mb-6">
-                As business owners, we not only take on the coordination of the company but also 
-                lend a hand ourselves and work on-site for you.
+                Als Geschäftsinhaber übernehmen wir nicht nur die Koordination des Unternehmens, sondern 
+                packen auch selbst mit an und arbeiten vor Ort für Sie.
               </p>
               <Button asChild className="bg-hero-gradient hover:opacity-90">
-                <NavLink to="/about">Learn More About Us</NavLink>
+                <NavLink to="/about">Mehr über uns erfahren</NavLink>
               </Button>
             </div>
             
@@ -140,23 +140,23 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
-              Our Services at a Glance
+              Unsere Leistungen im Überblick
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our services cannot be put into a fixed framework, as it depends on your imagination and wishes.
+              Unsere Leistungen können nicht in einen festen Rahmen gefasst werden, da es auf Ihre Vorstellungen und Wünsche ankommt.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              "Construction work of all kinds",
-              "Kitchen construction", 
-              "Ceramic and natural stone",
-              "Parquet / vinyl / laminate",
-              "Complete apartment renovations",
-              "Gardening work",
-              "Clear-outs and disposals",
-              "Property maintenance"
+              "Bauarbeiten aller Art",
+              "Küchenbau", 
+              "Keramik und Naturstein",
+              "Parkett / Vinyl / Laminat",
+              "Komplette Wohnungsrenovierungen",
+              "Gartenarbeiten",
+              "Entrümpelung und Entsorgung",
+              "Immobilienwartung"
             ].map((service, index) => (
               <Card key={index} className="text-center shadow-card hover:shadow-professional transition-shadow duration-300">
                 <CardContent className="p-6">
@@ -169,7 +169,7 @@ const Index = () => {
 
           <div className="text-center mt-12">
             <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90 text-lg px-8 py-3">
-              <NavLink to="/services">View All Services</NavLink>
+              <NavLink to="/services">Alle Leistungen ansehen</NavLink>
             </Button>
           </div>
         </div>
@@ -179,17 +179,17 @@ const Index = () => {
       <section className="bg-hero-gradient text-primary-foreground py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Let Our Work Convince You
+            Lassen Sie sich von unserer Arbeit überzeugen
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Contact us – no matter what your concern may be. We're ready to bring your vision to life.
+            Kontaktieren Sie uns – egal was Ihr Anliegen ist. Wir sind bereit, Ihre Vision zum Leben zu erwecken.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
-              <NavLink to="/portfolio">See Our Portfolio</NavLink>
+              <NavLink to="/portfolio">Unser Portfolio ansehen</NavLink>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4">
-              <NavLink to="/contact">Start Your Project</NavLink>
+              <NavLink to="/contact">Projekt starten</NavLink>
             </Button>
           </div>
         </div>

@@ -22,8 +22,8 @@ const Contact = () => {
     e.preventDefault();
     // Simulate form submission
     toast({
-      title: "Message sent successfully!",
-      description: "We will get back to you as soon as possible.",
+      title: "Nachricht erfolgreich gesendet!",
+      description: "Wir werden uns so schnell wie möglich bei Ihnen melden.",
     });
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
@@ -38,23 +38,23 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: "Our Location",
-      details: ["Allbauprojekt GmbH", "Construction Services", "Germany"]
+      title: "Unser Standort",
+      details: ["Allbauprojekt GmbH", "Bauleistungen", "Deutschland"]
     },
     {
       icon: Phone,
-      title: "Phone",
+      title: "Telefon",
       details: ["+49 (0) 123 456 789", "+49 (0) 123 456 790"]
     },
     {
       icon: Mail,
-      title: "Email",
-      details: ["info@allbauprojekt.de", "contact@allbauprojekt.de"]
+      title: "E-Mail",
+      details: ["info@allbauprojekt.de", "kontakt@allbauprojekt.de"]
     },
     {
       icon: Clock,
-      title: "Working Hours",
-      details: ["Mon - Fri: 8:00 - 17:00", "Sat: 9:00 - 14:00", "Sun: Closed"]
+      title: "Arbeitszeiten",
+      details: ["Mo - Fr: 8:00 - 17:00", "Sa: 9:00 - 14:00", "So: Geschlossen"]
     }
   ];
 
@@ -65,9 +65,9 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-hero-gradient text-primary-foreground py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Contact Us</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Kontakt</h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            Ready to start your project? Get in touch with us today – no matter what your concern may be
+            Bereit, Ihr Projekt zu starten? Nehmen Sie noch heute Kontakt mit uns auf – egal was Ihr Anliegen ist
           </p>
         </div>
       </section>
@@ -79,9 +79,9 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="shadow-professional">
               <CardHeader>
-                <CardTitle className="text-2xl">Send us a Message</CardTitle>
+                <CardTitle className="text-2xl">Senden Sie uns eine Nachricht</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Füllen Sie das untenstehende Formular aus und wir werden uns so schnell wie möglich bei Ihnen melden.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -99,7 +99,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email">E-Mail *</Label>
                       <Input
                         id="email"
                         name="email"
@@ -112,7 +112,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="phone">Phone</Label>
+                    <Label htmlFor="phone">Telefon</Label>
                     <Input
                       id="phone"
                       name="phone"
@@ -123,7 +123,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="subject">Subject *</Label>
+                    <Label htmlFor="subject">Betreff *</Label>
                     <Input
                       id="subject"
                       name="subject"
@@ -134,7 +134,7 @@ const Contact = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="message">Message *</Label>
+                    <Label htmlFor="message">Nachricht *</Label>
                     <Textarea
                       id="message"
                       name="message"
@@ -149,7 +149,7 @@ const Contact = () => {
                     type="submit"
                     className="w-full bg-hero-gradient hover:opacity-90 text-lg py-3"
                   >
-                    Send Message
+                    Nachricht senden
                   </Button>
                 </form>
               </CardContent>
@@ -158,10 +158,10 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-foreground mb-6">Get in Touch</h2>
+                <h2 className="text-3xl font-bold text-foreground mb-6">Kontakt aufnehmen</h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  We're here to help with all your construction and renovation needs. 
-                  Contact us through any of the following methods.
+                  Wir sind da, um bei all Ihren Bau- und Renovierungsbedürfnissen zu helfen. 
+                  Kontaktieren Sie uns über eine der folgenden Methoden.
                 </p>
               </div>
 
@@ -195,17 +195,17 @@ const Contact = () => {
       <section className="bg-construction-gradient py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Start Your Project?
+            Bereit, Ihr Projekt zu starten?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Let our work convince you – we're ready to tackle any construction challenge you have in mind.
+            Lassen Sie sich von unserer Arbeit überzeugen – wir sind bereit, jede Bauaufgabe anzugehen, die Sie im Sinn haben.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-hero-gradient hover:opacity-90">
-              Call Now: +49 (0) 123 456 789
+              Jetzt anrufen: +49 (0) 123 456 789
             </Button>
             <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              Email Us
+              E-Mail senden
             </Button>
           </div>
         </div>

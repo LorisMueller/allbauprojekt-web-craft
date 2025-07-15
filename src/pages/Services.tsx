@@ -9,39 +9,39 @@ const Services = () => {
   const services = [
     {
       icon: Building2,
-      title: "Construction Work",
-      description: "New construction and renovation projects of all kinds",
-      features: ["New buildings", "Renovations", "Structural modifications", "Foundation work"]
+      title: "Bauarbeiten",
+      description: "Neubau und Renovierungsprojekte aller Art",
+      features: ["Neubauten", "Renovierungen", "Bauliche Veränderungen", "Fundamentarbeiten"]
     },
     {
       icon: PaintBucket,
-      title: "Kitchen & Bathroom",
-      description: "Complete kitchen and bathroom renovations",
-      features: ["Kitchen construction", "Bathroom renovations", "Ceramic & natural stone", "Modern fixtures"]
+      title: "Küche & Bad",
+      description: "Komplette Küchen- und Badrenovierungen",
+      features: ["Küchenbau", "Badrenovierungen", "Keramik & Naturstein", "Moderne Armaturen"]
     },
     {
       icon: Hammer,
-      title: "Flooring",
-      description: "Professional flooring installation and renovation",
-      features: ["Parquet installation", "Vinyl flooring", "Laminate flooring", "Floor restoration"]
+      title: "Bodenbeläge",
+      description: "Professionelle Bodenverlegung und -renovierung",
+      features: ["Parkettverlegung", "Vinylböden", "Laminatböden", "Bodenrestaurierung"]
     },
     {
       icon: Wrench,
-      title: "Complete Renovations",
-      description: "Full apartment and property renovations",
-      features: ["Complete apartment renovations", "Property maintenance", "Interior design", "Project coordination"]
+      title: "Komplette Renovierungen",
+      description: "Vollständige Wohnungs- und Immobilienrenovierungen",
+      features: ["Komplette Wohnungsrenovierungen", "Immobilienwartung", "Inneneinrichtung", "Projektkoordination"]
     },
     {
       icon: Trees,
-      title: "Landscaping",
-      description: "Professional gardening and outdoor work",
-      features: ["Garden design", "Landscaping", "Outdoor maintenance", "Seasonal services"]
+      title: "Landschaftsbau",
+      description: "Professionelle Garten- und Außenarbeiten",
+      features: ["Gartengestaltung", "Landschaftsbau", "Außenanlagenpflege", "Saisonale Dienste"]
     },
     {
       icon: Truck,
-      title: "Additional Services",
-      description: "Clearing, disposal, and goods trading",
-      features: ["Clear-outs", "Waste disposal", "Material supply", "Trade services"]
+      title: "Zusätzliche Dienste",
+      description: "Entrümpelung, Entsorgung und Warenhandel",
+      features: ["Entrümpelung", "Abfallentsorgung", "Materialversorgung", "Handelsdienste"]
     }
   ];
 
@@ -52,14 +52,14 @@ const Services = () => {
       {/* Hero Section */}
       <section className="bg-hero-gradient text-primary-foreground py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Unsere Leistungen</h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            From construction to renovation - we offer the complete range of building services
+            Von Bauarbeiten bis zur Renovierung - wir bieten das komplette Spektrum an Bauleistungen
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Badge variant="secondary" className="text-lg py-2 px-4">affordable</Badge>
-            <Badge variant="secondary" className="text-lg py-2 px-4">uncomplicated</Badge>
-            <Badge variant="secondary" className="text-lg py-2 px-4">reliable</Badge>
+            <Badge variant="secondary" className="text-lg py-2 px-4">erschwinglich</Badge>
+            <Badge variant="secondary" className="text-lg py-2 px-4">unkompliziert</Badge>
+            <Badge variant="secondary" className="text-lg py-2 px-4">zuverlässig</Badge>
           </div>
         </div>
       </section>
@@ -69,10 +69,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What We Do
+              Was wir tun
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Our services cannot be put into a fixed framework, as it depends on your imagination and wishes.
+              Unsere Leistungen können nicht in einen festen Rahmen gefasst werden, da es auf Ihre Vorstellungen und Wünsche ankommt.
             </p>
           </div>
 
@@ -106,13 +106,13 @@ const Services = () => {
       <section className="bg-construction-gradient py-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Ready to Start Your Project?
+            Bereit, Ihr Projekt zu starten?
           </h2>
           <p className="text-lg text-muted-foreground mb-8">
-            As a well-coordinated team, we always carry out our work cleanly, competently, and reliably.
+            Als eingespieltes Team führen wir unsere Arbeiten stets sauber, kompetent und zuverlässig durch.
           </p>
           <Button asChild size="lg" className="bg-hero-gradient hover:opacity-90 text-lg px-8 py-3">
-            <NavLink to="/contact">Get in Touch</NavLink>
+            <NavLink to="/contact">Kontakt aufnehmen</NavLink>
           </Button>
         </div>
       </section>

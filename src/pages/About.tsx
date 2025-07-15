@@ -8,23 +8,23 @@ const About = () => {
   const values = [
     {
       icon: Award,
-      title: "Quality Excellence",
-      description: "We stand for attention to detail and unlimited possibilities in every project we undertake."
+      title: "Qualitätsexzellenz",
+      description: "Wir stehen für Liebe zum Detail und unbegrenzte Möglichkeiten in jedem Projekt, das wir übernehmen."
     },
     {
       icon: Users,
-      title: "Personal Contact",
-      description: "As business owners, we not only coordinate but also work on-site, ensuring personal customer relationships."
+      title: "Persönlicher Kontakt",
+      description: "Als Geschäftsinhaber koordinieren wir nicht nur, sondern arbeiten auch vor Ort und gewährleisten persönliche Kundenbeziehungen."
     },
     {
       icon: Target,
-      title: "Individual Solutions",
-      description: "Every project is unique. We adapt our services to your specific needs and wishes."
+      title: "Individuelle Lösungen",
+      description: "Jedes Projekt ist einzigartig. Wir passen unsere Leistungen an Ihre spezifischen Bedürfnisse und Wünsche an."
     },
     {
       icon: Heart,
-      title: "Authentic Relationships",
-      description: "We don't just accept assignments - we live out authentic relationships with our customers."
+      title: "Authentische Beziehungen",
+      description: "Wir nehmen nicht nur Aufträge an - wir leben authentische Beziehungen mit unseren Kunden."
     }
   ];
 
@@ -35,9 +35,9 @@ const About = () => {
       {/* Hero Section */}
       <section className="bg-hero-gradient text-primary-foreground py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">About Allbauprojekt</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">Über Allbauprojekt</h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
-            A young company with the goal of living out relationships and authenticity with our customers
+            Ein junges Unternehmen mit dem Ziel, Beziehungen und Authentizität mit unseren Kunden zu leben
           </p>
         </div>
       </section>
@@ -48,21 +48,22 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Open to Everything
+                Offen für alles
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  As the name of our company already suggests, we are not limited to specific types of work, 
-                  but offer the full range for you. "Allbauprojekt" aims at carrying out construction work 
-                  of all kinds including property maintenance as well as providing all related services.
+                  Wie der Name unseres Unternehmens bereits vermuten lässt, beschränken wir uns nicht auf 
+                  bestimmte Arbeitsarten, sondern bieten Ihnen das komplette Spektrum an. „Allbauprojekt" 
+                  hat das Ziel, Bauarbeiten aller Art einschließlich Immobilienwartung durchzuführen 
+                  sowie alle damit verbundenen Dienstleistungen anzubieten.
                 </p>
                 <p>
-                  We deliberately did not put a period, because construction work is just as individual 
-                  and diverse as we humans are. Allbauprojekt – open to everything.
+                  Wir haben bewusst keinen Punkt gesetzt, weil Bauarbeiten genauso individuell 
+                  und vielfältig sind wie wir Menschen. Allbauprojekt – offen für alles.
                 </p>
                 <p>
-                  "Allbauprojekt" is a young company with the goal of not only accepting assignments 
-                  but also living out relationships and authenticity with our customers.
+                  „Allbauprojekt" ist ein junges Unternehmen mit dem Ziel, nicht nur Aufträge anzunehmen, 
+                  sondern auch Beziehungen und Authentizität mit unseren Kunden zu leben.
                 </p>
               </div>
             </div>
@@ -70,7 +71,7 @@ const About = () => {
               <div className="aspect-square bg-muted rounded-2xl overflow-hidden shadow-hero">
                 <img 
                   src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=600&fit=crop"
-                  alt="Construction team at work"
+                  alt="Bauteam bei der Arbeit"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -84,10 +85,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our Values
+              Unsere Werte
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              What drives us and defines our approach to every project
+              Was uns antreibt und unseren Ansatz bei jedem Projekt definiert
             </p>
           </div>
 
@@ -114,10 +115,10 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Meet Our Management
+              Lernen Sie unsere Geschäftsführung kennen
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Business owners who not only coordinate but also work hands-on with you
+              Geschäftsinhaber, die nicht nur koordinieren, sondern auch praktisch mit Ihnen arbeiten
             </p>
           </div>
 
@@ -128,22 +129,22 @@ const About = () => {
                   <div className="aspect-square bg-muted rounded-2xl overflow-hidden">
                     <img 
                       src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop"
-                      alt="Management team"
+                      alt="Führungsteam"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold text-foreground">Our Leadership Team</h3>
+                    <h3 className="text-2xl font-bold text-foreground">Unser Führungsteam</h3>
                     <p className="text-muted-foreground">
-                      As business owners, we not only take on the coordination of the company but also 
-                      lend a hand ourselves and work on-site for you. This hands-on approach ensures 
-                      that every project receives the personal attention and quality it deserves.
+                      Als Geschäftsinhaber übernehmen wir nicht nur die Koordination des Unternehmens, sondern 
+                      packen auch selbst mit an und arbeiten vor Ort für Sie. Dieser praktische Ansatz gewährleistet, 
+                      dass jedes Projekt die persönliche Aufmerksamkeit und Qualität erhält, die es verdient.
                     </p>
                     <p className="text-muted-foreground">
-                      Let our work convince you and contact us – no matter what your concern may be.
+                      Lassen Sie sich von unserer Arbeit überzeugen und kontaktieren Sie uns – egal was Ihr Anliegen ist.
                     </p>
                     <Button asChild className="bg-hero-gradient hover:opacity-90">
-                      <NavLink to="/contact">Get to Know Us</NavLink>
+                      <NavLink to="/contact">Uns kennenlernen</NavLink>
                     </Button>
                   </div>
                 </div>

@@ -27,7 +27,7 @@ All colors MUST be HSL.
     --muted: 210 20% 95%;
     --muted-foreground: 210 15% 45%;
 
-    --accent: 32 95% 55%;
+    --accent: 50 25% 62%;
     --accent-foreground: 210 22% 15%;
 
     --destructive: 0 84.2% 60.2%;
@@ -39,7 +39,7 @@ All colors MUST be HSL.
 
     --hero-gradient: linear-gradient(135deg, hsl(214 84% 20%), hsl(214 84% 35%));
     --construction-gradient: linear-gradient(180deg, hsl(210 20% 95%), hsl(0 0% 98%));
-    --accent-gradient: linear-gradient(135deg, hsl(32 95% 55%), hsl(32 95% 65%));
+    --accent-gradient: linear-gradient(135deg, hsl(50 25% 62%), hsl(50 25% 72%));
     
     --shadow-professional: 0 10px 30px -10px hsl(214 84% 20% / 0.15);
     --shadow-card: 0 4px 20px -5px hsl(214 84% 20% / 0.08);
