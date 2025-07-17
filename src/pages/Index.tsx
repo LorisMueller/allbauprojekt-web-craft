@@ -52,29 +52,23 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-primary-foreground">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Allbauprojekt
+              Allbauprojekt Gmbh
             </h1>
             <p className="text-xl md:text-3xl mb-8 opacity-90">
-              Offen für alles – unbegrenzte Möglichkeiten
+              Ihr Traum - Unser Projekt
             </p>
             <p className="text-lg md:text-xl mb-12 opacity-80 max-w-3xl mx-auto">
               Wir stehen für Liebe zum Detail, unbegrenzte Möglichkeiten und persönlichen Kundenkontakt. 
               Bauarbeiten so individuell und vielfältig wie wir Menschen sind.
             </p>
-            
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              <Badge variant="secondary" className="text-lg py-2 px-6">erschwinglich</Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-6">unkompliziert</Badge>
-              <Badge variant="secondary" className="text-lg py-2 px-6">zuverlässig</Badge>
-            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
                 <NavLink to="/services">
-                  Unsere Leistungen entdecken <ArrowRight className="ml-2 h-5 w-5" />
+                  Unsere Leistungen entdecken
                 </NavLink>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
                 <NavLink to="/contact">Kontakt aufnehmen</NavLink>
               </Button>
             </div>
@@ -118,7 +112,7 @@ const Index = () => {
               {services.map((service, index) => (
                 <Card key={index} className="shadow-card hover:shadow-professional transition-shadow duration-300">
                   <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-4">
+                    <div className="flex space-x-4">
                       <div className="w-12 h-12 bg-accent-gradient rounded-lg flex items-center justify-center">
                         <service.icon className="h-6 w-6 text-accent-foreground" />
                       </div>
@@ -149,14 +143,14 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              "Bauarbeiten aller Art",
               "Küchenbau", 
               "Keramik und Naturstein",
               "Parkett / Vinyl / Laminat",
               "Komplette Wohnungsrenovierungen",
               "Gartenarbeiten",
-              "Entrümpelung und Entsorgung",
-              "Immobilienwartung"
+              "Räumungen und Entsorgungen",
+              "Handel mit Waren aller Art",
+              "Hauswartungen"
             ].map((service, index) => (
               <Card key={index} className="text-center shadow-card hover:shadow-professional transition-shadow duration-300">
                 <CardContent className="p-6">
@@ -188,7 +182,7 @@ const Index = () => {
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
               <NavLink to="/portfolio">Unser Portfolio ansehen</NavLink>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-4">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-4">
               <NavLink to="/contact">Projekt starten</NavLink>
             </Button>
           </div>

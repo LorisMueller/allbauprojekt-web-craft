@@ -39,17 +39,17 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Unser Standort",
-      details: ["Allbauprojekt GmbH", "Bauleistungen", "Deutschland"]
+      details: ["Uznacherstrasse 79", "8722 Kaltbrunn"]
     },
     {
       icon: Phone,
       title: "Telefon",
-      details: ["+49 (0) 123 456 789", "+49 (0) 123 456 790"]
+      details: ["+41 79 599 33 36"]
     },
     {
       icon: Mail,
       title: "E-Mail",
-      details: ["info@allbauprojekt.de", "kontakt@allbauprojekt.de"]
+      details: ["allbau.a@bluewin.ch"]
     },
     {
       icon: Clock,
@@ -202,10 +202,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-hero-gradient hover:opacity-90">
-              Jetzt anrufen: +49 (0) 123 456 789
-            </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-              E-Mail senden
+              Jetzt anrufen: +41 79 599 33 36
             </Button>
           </div>
         </div>

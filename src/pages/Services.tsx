@@ -57,7 +57,7 @@ const Services = () => {
             Von Bauarbeiten bis zur Renovierung - wir bieten das komplette Spektrum an Bauleistungen
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Badge variant="secondary" className="text-lg py-2 px-4">erschwinglich</Badge>
+            <Badge variant="secondary" className="text-lg py-2 px-4">günstig</Badge>
             <Badge variant="secondary" className="text-lg py-2 px-4">unkompliziert</Badge>
             <Badge variant="secondary" className="text-lg py-2 px-4">zuverlässig</Badge>
           </div>
