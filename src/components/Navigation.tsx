@@ -20,7 +20,11 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-hero-gradient rounded-lg"></div>
+              <img
+                  src="/allbauprojekt_logo3.png"
+                  alt="allbau-logo"
+                  className="w-8 l-8"
+              />
               <span className="font-bold text-xl text-primary">Allbauprojekt</span>
             </NavLink>
           </div>

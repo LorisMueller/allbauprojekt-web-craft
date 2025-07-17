@@ -146,7 +146,7 @@ const Index = () => {
               "Küchenbau", 
               "Keramik und Naturstein",
               "Parkett / Vinyl / Laminat",
-              "Komplette Wohnungsrenovierungen",
+              "Wohnungsrenovierungen",
               "Gartenarbeiten",
               "Räumungen und Entsorgungen",
               "Handel mit Waren aller Art",
