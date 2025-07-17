@@ -1,11 +1,18 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Building2, Users, Award } from "lucide-react";
+import { CheckCircle, Building2, Users, Award, ChevronDown } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import heroImage from "@/assets/hero-construction.jpg";
 
 const Index = () => {
+  const scrollToNextSection = () => {
+    const nextSection = document.querySelector('[data-scroll-target]');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const features = [
     "Liebe zum Detail",
     "Unbegrenzte Möglichkeiten", 
@@ -71,10 +78,21 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        {/* Scroll Down Arrow */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+          <button
+            onClick={scrollToNextSection}
+            className="animate-bounce text-white/80 hover:text-white transition-colors duration-300"
+            aria-label="Nach unten scrollen"
+          >
+            <ChevronDown className="h-8 w-8" />
+          </button>
+        </div>
       </section>
 
       {/* What Sets Us Apart */}
-      <section className="py-20 bg-construction-gradient">
+      <section className="py-20 bg-construction-gradient" data-scroll-target>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6">
