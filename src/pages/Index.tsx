@@ -80,10 +80,10 @@ const Index = () => {
         </div>
         
         {/* Scroll Down Arrow */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20">
           <button
             onClick={scrollToNextSection}
-            className="animate-bounce text-white/80 hover:text-white transition-colors duration-300"
+            className="animate-bounce text-white/80 hover:text-white transition-colors duration-2000"
             aria-label="Nach unten scrollen"
           >
             <ChevronDown className="h-8 w-8" />
