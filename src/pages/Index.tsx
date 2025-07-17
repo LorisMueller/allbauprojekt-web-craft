@@ -40,7 +40,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       
       {/* Hero Section */}
@@ -185,7 +185,7 @@ const Index = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-hero-gradient text-primary-foreground py-20">
+      <section className="bg-hero-gradient text-primary-foreground py-20 pb-32 sm:pb-20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             Lassen Sie sich von unserer Arbeit überzeugen
