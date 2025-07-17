@@ -14,7 +14,7 @@ const Portfolio = () => {
       title: "Badezimmer-Transformation",
       category: "Badrenovierung",
       description: "Luxuriöse Badrenovierung mit Keramikfliesen und modernen Armaturen",
-      image: "photo-1552321554-5fefe8c9ef14"
+      image: "/pictures/bath1.jpeg"
     },
     {
       title: "Komplette Wohnungsrenovierung", 
@@ -73,7 +73,7 @@ const Portfolio = () => {
               <Card key={index} className="overflow-hidden shadow-card hover:shadow-professional transition-all duration-300 group">
                 <div className="aspect-[4/3] bg-muted relative overflow-hidden">
                   <img 
-                    src={`https://images.unsplash.com/${project.image}?w=800&h=600&fit=crop`}
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />

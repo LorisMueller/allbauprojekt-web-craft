@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ArrowRight, CheckCircle, Building2, Users, Award } from "lucide-react";
+import { CheckCircle, Building2, Users, Award } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import heroImage from "@/assets/hero-construction.jpg";
 
@@ -11,7 +10,6 @@ const Index = () => {
     "Liebe zum Detail",
     "Unbegrenzte Möglichkeiten", 
     "Persönlicher Kundenkontakt",
-    "Geschäftsführung vor Ort",
     "Individuelle Lösungen",
     "Authentische Beziehungen"
   ];
@@ -58,8 +56,7 @@ const Index = () => {
               Ihr Traum - Unser Projekt
             </p>
             <p className="text-lg md:text-xl mb-12 opacity-80 max-w-3xl mx-auto">
-              Wir stehen für Liebe zum Detail, unbegrenzte Möglichkeiten und persönlichen Kundenkontakt. 
-              Bauarbeiten so individuell und vielfältig wie wir Menschen sind.
+              Wir stehen für Liebe zum Detail, unbegrenzte Möglichkeiten und persönlichen Kundenkontakt, denn Bauarbeiten so individuell und vielfältig wie wir Menschen sind.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
