@@ -8,7 +8,67 @@ const Portfolio = () => {
       title: "Moderne Küchenrenovierung",
       category: "Küchenbau",
       description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
-      image: "photo-1556909114-f6e7ad7d3136"
+      image: "/pictures/kitchen4.jpeg"
+    },
+    {
+      title: "Moderne Küchenrenovierung",
+      category: "Küchenbau",
+      description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
+      image: "/pictures/kitchen5.jpeg"
+    },
+    {
+      title: "Moderne Küchenrenovierung",
+      category: "Küchenbau",
+      description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
+      image: "/pictures/kitchen3.jpeg"
+    },
+    {
+      title: "Moderne Küchenrenovierung",
+      category: "Küchenbau",
+      description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
+      image: "/pictures/kitchen1.jpeg"
+    },
+    {
+      title: "Moderne Küchenrenovierung",
+      category: "Küchenbau",
+      description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
+      image: "/pictures/kitchen2.jpeg"
+    },
+    {
+      title: "Moderne Küchenrenovierung",
+      category: "Küchenbau",
+      description: "Komplette Küchenrenovierung mit modernen Geräten und Naturstein-Arbeitsplatten",
+      image: "/pictures/kitchen6.jpeg"
+    },
+    {
+      title: "Treppengestaltung",
+      category: "Treppen",
+      description: "Professionelle Treppenplanung und -gestaltung mit nachhaltigen Materialien",
+      image: "/pictures/stairs1.jpeg"
+    },
+    {
+      title: "Parkett-Installation",
+      category: "Bodenbelag",
+      description: "Hochwertige Parkettverlegung in Wohnimmobilie",
+      image: "/pictures/floor1.jpeg"
+    },
+    {
+      title: "Parkett-Installation",
+      category: "Bodenbelag",
+      description: "Hochwertige Parkettverlegung in Wohnimmobilie",
+      image: "/pictures/floor2.jpeg"
+    },
+    {
+      title: "Parkett-Installation",
+      category: "Bodenbelag",
+      description: "Hochwertige Parkettverlegung in Wohnimmobilie",
+      image: "/pictures/floor3.jpeg"
+    },
+    {
+      title: "Parkett-Installation",
+      category: "Bodenbelag",
+      description: "Hochwertige Parkettverlegung in Wohnimmobilie",
+      image: "/pictures/floor4.jpeg"
     },
     {
       title: "Badezimmer-Transformation",
@@ -16,30 +76,6 @@ const Portfolio = () => {
       description: "Luxuriöse Badrenovierung mit Keramikfliesen und modernen Armaturen",
       image: "/pictures/bath1.jpeg"
     },
-    {
-      title: "Komplette Wohnungsrenovierung", 
-      category: "Vollrenovierung",
-      description: "Komplette Wohnungsumgestaltung einschließlich Bodenbelag, Wände und Elektroarbeiten",
-      image: "photo-1560448204-e02f11c3d0e2"
-    },
-    {
-      title: "Parkett-Installation",
-      category: "Bodenbelag",
-      description: "Hochwertige Parkettverlegung in Wohnimmobilie",
-      image: "photo-1558618666-fcd25c85cd64"
-    },
-    {
-      title: "Gartengestaltung",
-      category: "Landschaftsbau",
-      description: "Professionelle Gartenplanung und -gestaltung mit nachhaltigen Materialien",
-      image: "photo-1416879595882-3373a0480b5b"
-    },
-    {
-      title: "Neubau-Projekt",
-      category: "Bauarbeiten",
-      description: "Kompletter Neubau vom Fundament bis zur Fertigstellung",
-      image: "photo-1541888946425-d81bb19240f5"
-    }
   ];
 
   return (
@@ -105,7 +141,7 @@ const Portfolio = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="text-center">
-              <div className="text-4xl font-bold text-primary mb-2">100+</div>
+              <div className="text-4xl font-bold text-primary mb-2">30+</div>
               <p className="text-muted-foreground">Abgeschlossene Projekte</p>
             </div>
             <div className="text-center">

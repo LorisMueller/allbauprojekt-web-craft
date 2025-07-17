@@ -21,7 +21,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center space-x-2">
               <img
-                  src="/allbauprojekt_logo3.png"
+                  src="/allbauprojekt_logo_transparent.png"
                   alt="allbau-logo"
                   className="w-8 l-8"
               />

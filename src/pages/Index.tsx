@@ -86,7 +86,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <div className="grid gap-4 mb-8">
                 {features.map((feature, index) => (
