@@ -68,7 +68,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden shadow-card hover:shadow-professional transition-all duration-300 group">
                 <div className="aspect-[4/3] bg-muted relative overflow-hidden">
