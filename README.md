@@ -1,73 +1,90 @@
-# Welcome to your Lovable project
+# Allbauprojekt Web Craft
 
-## Project info
+Website der **Allbauprojekt GmbH** (React + Vite + TypeScript).
 
-**URL**: https://lovable.dev/projects/d4fe8ff6-f8eb-47bc-bae9-502d10ea81d1
+## Voraussetzungen
 
-## How can I edit this code?
+- Node.js 18+ (empfohlen: aktuelle LTS)
+- npm
 
-There are several ways of editing your application.
+## Lokale Entwicklung
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/d4fe8ff6-f8eb-47bc-bae9-502d10ea81d1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Die App läuft danach lokal unter einer Vite-URL (z. B. `http://localhost:8080`).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Produktions-Build
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Der Build liegt anschließend im Ordner:
 
-## What technologies are used for this project?
+- `dist/`
 
-This project is built with:
+Optional lokal prüfen:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run preview
+```
 
-## How can I deploy this project?
+## Deployment auf Hostpoint
 
-Simply open [Lovable](https://lovable.dev/projects/d4fe8ff6-f8eb-47bc-bae9-502d10ea81d1) and click on Share -> Publish.
+1. Build erstellen:
+```bash
+npm run build
+```
+2. Im Hostpoint Control Panel zu `Webhosting > Websites` gehen.
+3. Beim Ziel-Webauftritt den **Document-Root** öffnen.
+4. **Inhalt von `dist/`** in den Document-Root hochladen.
 
-## Can I connect a custom domain to my Lovable project?
+## SPA-Routing (.htaccess)
 
-Yes, you can!
+Da die Website `BrowserRouter` verwendet, muss Apache alle nicht vorhandenen Pfade auf `index.html` umleiten, damit direkte Aufrufe wie `/portfolio` funktionieren.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Im Document-Root eine `.htaccess` mit folgendem Inhalt anlegen (oder ergänzen):
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+```
+
+## SSL
+
+Im Hostpoint Control Panel unter `Websites > SSL-Verschlüsselung` mindestens **FreeSSL** aktivieren.
+
+## Projektstruktur (kurz)
+
+- `src/pages/` – Seiten (Start, Leistungen, Portfolio, Über uns, Kontakt, Rechtliches)
+- `src/components/` – wiederverwendbare Komponenten (Navigation, Footer, UI)
+- `public/` – statische Assets/Bilder
+
+## Rechtliche Seiten
+
+Die Website enthält:
+
+- Impressum (`/impressum`)
+- Datenschutzerklärung (`/datenschutz`)
+- Cookie-/Tracking-Hinweis (`/cookies`)
+
+Wichtig: Register-/UID-/MWST-Angaben im Impressum müssen mit den offiziellen Firmendaten übereinstimmen.
+
+## Nützliche Scripts
+
+```bash
+npm run dev      # Entwicklung
+npm run build    # Produktions-Build
+npm run preview  # Build lokal testen
+```
+

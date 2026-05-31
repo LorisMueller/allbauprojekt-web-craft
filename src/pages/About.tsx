@@ -1,8 +1,6 @@
 import Navigation from "@/components/Navigation";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Award, Users, Target, Heart } from "lucide-react";
-import { NavLink } from "react-router-dom";
 
 const About = () => {
   const values = [
@@ -32,7 +30,6 @@ const About = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
-      {/* Hero Section */}
       <section className="bg-hero-gradient text-primary-foreground py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Über Allbauprojekt</h1>
@@ -42,24 +39,23 @@ const About = () => {
         </div>
       </section>
 
-      {/* Company Story */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Offen für alles
+                Alles aus einer Hand
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  Wie der Name unseres Unternehmens bereits vermuten lässt, beschränken wir uns nicht auf 
-                  bestimmte Arbeitsarten, sondern bieten Ihnen das komplette Spektrum an. „Allbauprojekt" 
-                  hat das Ziel, Bauarbeiten aller Art einschließlich Immobilienwartung durchzuführen 
-                  sowie alle damit verbundenen Dienstleistungen anzubieten.
+                  Bei Allbauprojekt erhalten Sie vielseitige Leistungen aus einer Hand. Von einzelnen
+                  Renovationsarbeiten bis zu umfassenden Bau- und Unterhaltsarbeiten begleiten wir Sie
+                  zuverlässig und mit einem klaren Blick für das Ganze.
                 </p>
                 <p>
-                  Wir haben bewusst keinen Punkt gesetzt, weil Bauarbeiten genauso individuell 
-                  und vielfältig sind wie wir Menschen. Allbauprojekt – offen für alles.
+                  Unser Anspruch ist es, Projekte ganzheitlich zu denken und sauber umzusetzen. So
+                  entstehen stimmige Lösungen, bei denen Qualität, Koordination und persönliche
+                  Betreuung zusammenkommen.
                 </p>
                 <p>
                   „Allbauprojekt" ist ein junges Unternehmen mit dem Ziel, nicht nur Aufträge anzunehmen, 
@@ -70,8 +66,13 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square bg-muted rounded-2xl overflow-hidden shadow-hero">
                 <img 
-                  src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=600&fit=crop"
-                  alt="Bauteam bei der Arbeit"
+                  src="/pictures/aboutus.jpg"
+                  srcSet="/pictures/aboutus.jpg 1x, /pictures/aboutus.jpg 2x"
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                  alt="Allbauprojekt Innenausbau und Gesamtleistung"
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="sync"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -80,7 +81,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
       <section className="bg-construction-gradient py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -110,7 +110,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Section
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -152,7 +152,7 @@ const About = () => {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

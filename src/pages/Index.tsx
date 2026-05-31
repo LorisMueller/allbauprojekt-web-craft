@@ -114,10 +114,6 @@ const Index = () => {
                   </div>
                 ))}
               </div>
-              <p className="text-muted-foreground text-lg mb-6">
-                Als Geschäftsinhaber übernehmen wir nicht nur die Koordination des Unternehmens, sondern 
-                packen auch selbst mit an und arbeiten vor Ort für Sie.
-              </p>
               <Button asChild className="bg-hero-gradient hover:opacity-90">
                 <NavLink to="/about">Mehr über uns erfahren</NavLink>
               </Button>
